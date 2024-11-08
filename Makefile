@@ -21,5 +21,7 @@ proto:
     proto/*.proto
 dbcontainer:
 	docker-compose -f /Users/xavicci/Desktop/MobilLibre/docker-compose.yml up -d
+sqlc:
+	sqlc generate
 
-.PHONY: postgresinit postgres createdb dropdb migrateup migratedown createDockerfile grpccontainer proto dbcontainer
+.PHONY: postgresinit postgres createdb dropdb migrateup migratedown createDockerfile grpccontainer proto dbcontainer sqlc

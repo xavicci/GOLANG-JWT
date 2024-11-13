@@ -1,5 +1,3 @@
-dbbank:
-	docker exec -it postgres_bank psql -U userbank -d simplebank
 createdb:
 	docker exec -it postgres_bank createdb --username=userbank --owner=userbank simple_bank
 dropdb:

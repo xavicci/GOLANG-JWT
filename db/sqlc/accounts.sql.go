@@ -92,7 +92,7 @@ func (q *Queries) ListAccounts(ctx context.Context, arg ListAccountsParams) ([]A
 			&i.Balance,
 			&i.Currency,
 			&i.CreatedAt,
-		); err != nil { 
+		); err != nil {
 			return nil, err
 		}
 		items = append(items, i)
